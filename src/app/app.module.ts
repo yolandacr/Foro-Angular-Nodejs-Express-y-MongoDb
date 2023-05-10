@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
+import { PanelModule } from './panel/panel.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
     routing,
     FormsModule,
     HttpClientModule,
-    AngularFileUploaderModule
+    AngularFileUploaderModule,
+    PanelModule
   ],
   exports: [
     RegisterComponent,
