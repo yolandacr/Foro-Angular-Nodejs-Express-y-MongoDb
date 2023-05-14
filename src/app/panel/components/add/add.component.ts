@@ -36,7 +36,21 @@ export class AddComponent {
   }
 
   onSubmit(form:any){
-    console.log(this.topic);
-  }
+    this._topicService.addTopic(this.token,this.topic).subscribe(
+      response => {
+        if(response.topic){
+          this.status = 'success';
+          this.topic = response.topic;
+          this._router.navigate(['/panel']);
+        }else{
+          this.status = 'error';
+        }
 
+      },
+      error => {
+        this.status = 'error';
+        console.log(error);
+      }
+    )
+  }
 }
