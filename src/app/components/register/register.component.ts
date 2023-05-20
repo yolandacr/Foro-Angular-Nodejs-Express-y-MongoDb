@@ -21,7 +21,6 @@ export class RegisterComponent {
   }
 
   ngOnInit(){
-    console.log(this._userService.prueba());
   }
 
   onSubmit(form:any){

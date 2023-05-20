@@ -66,7 +66,6 @@ export class UserEditComponent {
   avatarUpload(data:any) {
     let data_obj = data.body;
     this.user.image = data_obj.user.image;
-    console.log(this.user);
   }
 
   ngOnInit(){
@@ -75,9 +74,7 @@ export class UserEditComponent {
 
   onSubmit(form:any){
     this._userService.update(this.user).subscribe(
-      response => {
-        console.log(response.user);
-        
+      response => { 
         if(!response.user){
           this.status = 'error';
         }else{

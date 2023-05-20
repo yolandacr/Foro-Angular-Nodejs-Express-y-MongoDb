@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
 import { PanelModule } from './panel/panel.module';
+import { MomentModule } from 'angular2-moment';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { PanelModule } from './panel/panel.module';
     FormsModule,
     HttpClientModule,
     AngularFileUploaderModule,
-    PanelModule
+    PanelModule,
+    MomentModule
   ],
   exports: [
     RegisterComponent,

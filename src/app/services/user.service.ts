@@ -15,10 +15,6 @@ export class UserService{
 
     }
 
-    prueba(){
-        return 'Hola mundo desde el servicio de angular';
-    }
-
     register(user:any): Observable <any>{
         //Convertir el objeto del usuario a un json string 
         let params = JSON.stringify(user);

@@ -18,6 +18,7 @@ export class AddComponent {
   public identity:any;
   public token: any;
   public status:any;
+  public is_edit;
 
   constructor(
     private _route:ActivatedRoute,
@@ -29,10 +30,10 @@ export class AddComponent {
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
     this. topic = new Topic('','','','','','',this.identity._id,null);
+    this.is_edit = false;
   }
 
   ngOnInit(){
-    console.log(this._topicService.prueba());
   }
 
   onSubmit(form:any){
