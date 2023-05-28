@@ -11,6 +11,7 @@ import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
 import { PanelModule } from './panel/panel.module';
 import { MomentModule } from 'angular2-moment';
+import { TopicsComponent } from './components/topics/topics.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MomentModule } from 'angular2-moment';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
-    UserEditComponent
+    UserEditComponent,
+    TopicsComponent
   ],
   imports: [
     BrowserModule,
