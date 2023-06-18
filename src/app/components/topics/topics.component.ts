@@ -31,7 +31,7 @@ export class TopicsComponent {
     this._route.params.subscribe(params => {
       var page = +params['page'];
 
-      if(!page || page == null || page==undefined){
+      if(!page){
         page = 1;
         this.prev_page = 1;
         this.next_page = 2;

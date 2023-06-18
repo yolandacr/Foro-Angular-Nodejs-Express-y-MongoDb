@@ -1,17 +1,13 @@
+import { User } from "./user";
+
 export class Comment{
     constructor(
         public _id: string,
         public content: string,
         public date: string,
-        public user: any
+        public user: User
     ){
 
     }
 
 }
-
-
-
-// content: String,
-// 	date: {type: Date, default: Date.now },
-// 	user: { type: Schema.ObjectId, ref: 'User' }
