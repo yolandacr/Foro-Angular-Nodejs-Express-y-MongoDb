@@ -13,6 +13,10 @@ import { PanelModule } from './panel/panel.module';
 import { MomentModule } from 'angular2-moment';
 import { TopicsComponent } from './components/topics/topics.component';
 import { TopicDetailComponent } from './components/topic-detail/topic-detail.component';
+//Servicios
+import { UserService } from "./services/user.service";
+import { UserGuard } from "./services/user.guard";
+import { NoIdentityGuard } from "./services/no.identity.guard";
 
 
 @NgModule({
@@ -39,7 +43,10 @@ import { TopicDetailComponent } from './components/topic-detail/topic-detail.com
     LoginComponent
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    UserGuard,
+    UserService,
+    NoIdentityGuard
   ],
   bootstrap: [AppComponent]
 })
