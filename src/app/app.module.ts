@@ -17,6 +17,7 @@ import { TopicDetailComponent } from './components/topic-detail/topic-detail.com
 import { UserService } from "./services/user.service";
 import { UserGuard } from "./services/user.guard";
 import { NoIdentityGuard } from "./services/no.identity.guard";
+import { UsersComponent } from './components/users/users.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { NoIdentityGuard } from "./services/no.identity.guard";
     HomeComponent,
     UserEditComponent,
     TopicsComponent,
-    TopicDetailComponent
+    TopicDetailComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

@@ -65,10 +65,18 @@ export class UserService{
 
     update(user:any):Observable<any>{
         let params = JSON.stringify(user);
+        
         let headers = new HttpHeaders().set('Content-Type', 'application/json')
                                        .set('Authorization',this.getToken());
 
         return this._http.put(this.url+'user/update',params, {headers:headers});
+    }
 
+    getUsers():Observable<any>{
+        return this._http.get(this.url+'users');
+    }
+
+    getUser(userId:any):Observable<any>{
+        return this._http.get(this.url+'user/'+userId);
     }
 }
