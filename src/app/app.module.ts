@@ -18,6 +18,7 @@ import { UserService } from "./services/user.service";
 import { UserGuard } from "./services/user.guard";
 import { NoIdentityGuard } from "./services/no.identity.guard";
 import { UsersComponent } from './components/users/users.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { UsersComponent } from './components/users/users.component';
     UserEditComponent,
     TopicsComponent,
     TopicDetailComponent,
-    UsersComponent
+    UsersComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
