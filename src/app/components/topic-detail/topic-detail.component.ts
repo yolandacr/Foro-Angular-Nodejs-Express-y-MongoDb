@@ -33,6 +33,8 @@ export class TopicDetailComponent {
   ){
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
+    
+    
     this.comment = new Comment('','','',this.identity._id);
     this.url = global.url;
   }

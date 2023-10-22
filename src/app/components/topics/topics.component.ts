@@ -18,6 +18,7 @@ export class TopicsComponent {
   public next_page:any;
   public prev_page:any;
   public number_pages:any;
+  public no_paginate:any;
 
   constructor(
     private _route:ActivatedRoute,
@@ -25,6 +26,7 @@ export class TopicsComponent {
     private _topicService:TopicService
   ){
     this.page_title = 'Temas';
+    this.no_paginate = false;
   }
 
   ngOnInit(){

@@ -4,13 +4,13 @@
             <h1 class="display-4">{{page_title}}</h1>
             <p class="lead">Pon tus dudas, aprende y ayuda a tus compañeros programadores.</p>
             <p>
-                <a href="#"class="btn btn-primary btn-lg mr-3">
+                <a [routerLink]="['/temas']" class="btn btn-primary btn-lg mr-3">
                     Ver Temas
                 </a>
-                <a href="#" class="btn btn-success btn-lg mr-3">
+                <a [routerLink]="['/usuarios']" class="btn btn-success btn-lg mr-3">
                     Ver Compañeros
                 </a>
-                <a href="#" class="btn btn-warning btn-lg mr-3">
+                <a [routerLink]="['/panel/crear']" class="btn btn-warning btn-lg mr-3" *ngIf="identity">
                     Añade un nuevo tema
                 </a>
              
