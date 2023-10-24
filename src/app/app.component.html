@@ -42,7 +42,8 @@
 
         <li class="nav-item" *ngIf="identity">
           <div class="avatar_mask">
-            <img class= "avatar_nav" src="{{ url + 'avatar/' + identity.image }}"/>
+            <img class= "avatar_nav" src="{{ url + 'avatar/' + identity.image }}"   *ngIf="identity.image"/>
+            <img src="assets/img/user_profile.jpg"  *ngIf="!identity.image"/>
           </div>
         </li>
 
